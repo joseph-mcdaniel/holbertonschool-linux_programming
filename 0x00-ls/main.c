@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <dirent.h>
+#include "hls.h"
 /**
  * main - lists the content of current directory
  *
