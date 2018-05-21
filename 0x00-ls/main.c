@@ -18,6 +18,8 @@ int main(int argc, char *argv[])
 
 	while ((read = readdir(dir)) != NULL)
 	{
+		if (read->d_name[0] == '.')
+			continue;
 		printf("%s ", read->d_name);
 	}
 	printf("\n");
