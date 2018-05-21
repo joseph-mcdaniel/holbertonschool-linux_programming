@@ -18,8 +18,9 @@ int main(int argc, char *argv[])
 
 	while ((read = readdir(dir)) != NULL)
 	{
-		printf("%s\n", read->d_name);
+		printf("%s ", read->d_name);
 	}
+	printf("\n");
 
 	closedir(dir);
 
